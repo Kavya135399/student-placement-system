@@ -17,9 +17,13 @@
               </div>
 
               <div className="nav-buttons">
-                <button className="login-btn">Login</button>
-                <button className="register-btn">Register</button>
-              </div>
+          <button className="login-btn" onClick={() => navigate("/login")}>
+            Login
+          </button>
+          <button className="register-btn" onClick={() => navigate("/register")}>
+            Register
+          </button>
+        </div>
             </nav>
 
             {/* About Content */}

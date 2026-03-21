@@ -1,0 +1,144 @@
+/* Auth.css */
+
+/* Full screen container */
+/* body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+  margin: 0;
+}
+/* Wrapper for login/register card with optional left image */
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Left side image */
+.auth-left {
+  display: none; /* hidden on mobile */
+}
+
+.auth-left img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Card container */
+.auth-container {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.auth-container h2 {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #262626;
+}
+
+/* Inputs & select */
+.auth-container input,
+.auth-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  background: #fff;           /* <-- changed to white */
+  color: #262626;             /* <-- added dark text color */
+  font-size: 14px;
+}
+
+.auth-container input::placeholder {
+  color: #999;                /* placeholder color */
+}
+
+.auth-container input:focus,
+.auth-container select:focus {
+  outline: none;
+  border-color: #a8a8a8;
+}
+
+/* Buttons */
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #405de6, #833ab4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-container button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Messages */
+.auth-container p {
+  font-size: 13px;
+  color: red;
+  margin-top: 8px;
+}
+
+.success-msg {
+  font-size: 13px;
+  color: green;
+}
+
+/* Footer links */
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.auth-footer a {
+  color: #385185;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+  .auth-left {
+    display: none;
+  }
+}
+
+.auth-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
